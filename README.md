@@ -57,7 +57,7 @@ You may first run the application, if there is any error about missing dependenc
 
 2.  Modify the configuration file, if you need to view the detection results using presenter server for the live input or video source.  
 
-    Modify **presenter\_server\_ip** and **presenter\_view\_ip** in **script/body\_pose.conf** to the current ubuntu server and atlas200dk development board network port ip,           **presenter \_agent\_ip** is the ip of the network port connected to the ubuntu server on the development board.
+    Modify **presenter\_server\_ip** and **presenter\_view\_ip** in **body\_pose.conf** to the current ubuntu server and atlas200dk development board network port ip,           **presenter \_agent\_ip** is the ip of the network port connected to the ubuntu server on the development board.
 
     If you use USB connection, the USB network port ip of the development board is 192.168.1.2, and the network port ip of the virtual network card connected to the ubuntu server and the development board is 192.168.1.223, then the configuration file content is as follows:
 
