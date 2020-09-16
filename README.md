@@ -4,14 +4,9 @@ This application runs on Atlas 200 DK, to infer human body poses. For more infor
 
 In this repository, the model is a simplied version for edge computing, and it directly outputs the predicted locations of the human body joints. The set of 14 detected joints are shown in the diagram below:
 
-14 joints:
-0-right shoulder, 1-right elbow, 2-right wrist, 3-left shoulder, 4-left elbow, 5-left wrist, 
-6-right hip, 7-right knee, 8-right ankle, 9-left hip, 10-left knee, 11-left ankle, 
-12-top of the head and 13-neck
-
-                     12                     
-                     |
-                     |
+                     12                     0-right shoulder, 1-right elbow, 2-right wrist, 3-left shoulder
+                     |                      4-left elbow, 5-left wrist, 6-right hip, 7-right knee, 8-right ankle
+                     |                      9-left hip, 10-left knee, 11-left ankle, 12-top of the head, 13-neck
                0-----13-----3
               /     / \      \
              1     /   \      4
