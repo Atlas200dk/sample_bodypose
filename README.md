@@ -21,8 +21,8 @@ In this repository, the model is a simplied version for edge computing, and it d
 
 The figure below shows the sample output on a single image input. The detected pose is displayed in the form of a skeleton overlay on the image.
 
-**Figure**  OpenPose detection result<a name="zh-cn_topic_0228757088_fig64391558352"></a>  
-    ![](figures/pose_detected.jpg | width=100)
+**Figure**  Body pose detection result<a name="zh-cn_topic_0228757088_fig64391558352"></a>  
+    <img src="figures/pose_detected.jpg" width="350">
 
 **Performance:** The inference time of running the model on Atlas 200 DK is about 17 ms per image/frame .  
 **Limitation:** The model works well when there is only one persion and with whole body clearly shown in the view.
@@ -79,9 +79,7 @@ You may first run the application, if there is any error about missing dependenc
     Enter the development board password when prompted for password. The default password of the development board is **Mind@123**
 
     
-4.  Start Presenter Server.
-
-    **NOTE**: This step is required when the presenter server needs to be used for video or live display on the browser. Otherwise, skip this step.
+4.  Start Presenter Server, if you need to view the detection results using presenter server for the live input or video source, otherwise, skip this step.
 
     Execute the following command to start the Presenter Server in the background.
 
@@ -136,22 +134,22 @@ You may first run the application, if there is any error about missing dependenc
 
     *Image input source*: 
 
-    **cd ~/HIAI_PROJECTS/openpose-pythonC73/code_image**   
+    **cd ~/HIAI_PROJECTS/sample_bodypose/code_image**   
     **python3 main.py --model='model/body_pose.om' --frames_input_src='tennis_player.jpg' --output_dir='outputs'**
 
     *Video input source (output video)*:
 
-    **cd ~/HIAI_PROJECTS/openpose-pythonC73/code_video**   
+    **cd ~/HIAI_PROJECTS/sample_bodypose/code_video**   
     **python3 main.py --model='model/body_pose.om' --frames_input_src='yoga.mp4' --output_dir='outputs' --is_presenter_server=False**
 
     Video input source (output streamed to presenter server)*:
 
-    **cd ~/HIAI_PROJECTS/openpose-pythonC73/code_video**   
+    **cd ~/HIAI_PROJECTS/sample_bodypose/code_video**   
     **python3 main.py --model='model/body_pose.om' --frames_input_src='yoga.mp4' --output_dir='outputs' --is_presenter_server=True**
 
     *Live camera source*:
 
-    **cd ~/HIAI_PROJECTS/openpose-pythonC73/code_live**   
+    **cd ~/HIAI_PROJECTS/sample_bodypose/code_live**   
     **python3 main.py --model='model/body_pose.om'**
     
     **Note**, for the live camera case, the "CAMERA0" camera is used by default. Please refer to the link below for the viewing method.   
@@ -179,12 +177,12 @@ If the presenter server is being used for display, stop
     **ps -ef | grep presenter**
 
     ```
-    ascend@ubuntu:~/AscendProjects/openpose-pythonC73/script$ ps -ef | grep presenter
-    ascend 9560 1342 0 02:19 pts/4  00:00:04   python3/home/ascend/AscendProjects/openpose-pythonC73.bak/script/..//present
-    erserver/presenter_server.py --app openpose-pythonC73
+    ascend@ubuntu:~/AscendProjects/sample_bodypose/script$ ps -ef | grep presenter
+    ascend 9560 1342 0 02:19 pts/4  00:00:04   python3/home/ascend/AscendProjects/sample_bodypose.bak/script/..//present
+    erserver/presenter_server.py --app sample_bodypose
     ```
 
-    As shown above, _9650_ is the process ID of the Presenter Server service corresponding to the openpose-pythonC73 application.
+    As shown above, _9650_ is the process ID of the Presenter Server service corresponding to the sample_bodypose application.
 
     If you want to stop this service, execute the following command:
 
