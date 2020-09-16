@@ -22,7 +22,7 @@ In this repository, the model is a simplied version for edge computing, and it d
 The figure below shows the sample output on a single image input. The detected pose is displayed in the form of a skeleton overlay on the image.
 
 **Figure**  OpenPose detection result<a name="zh-cn_topic_0228757088_fig64391558352"></a>  
-    ![](figures/pose_detected.jpg "pose-detected")
+    ![](figures/pose_detected.jpg | width=100)
 
 **Performance:** The inference time of running the model on Atlas 200 DK is about 17 ms per image/frame .  
 **Limitation:** The model works well when there is only one persion and with whole body clearly shown in the view.
@@ -70,7 +70,7 @@ You may first run the application, if there is any error about missing dependenc
     
     Generally, when connecting via USB, atlas200dk\_board\_ip is the USB network port ip of the development board, and the default is 192.168.1.2. When connecting through a network port, atlas200dk\_board\_ip is the network port ip of the development board, and the default is 192.168.0.2.
 
-3.  Copy the application code to the development board.
+3.  Copy the application code to Atlas 200 DK board.
    
     Navigate to the directory where the sample_bodypose application code is located, such as: AscendProjects/sample_bodypose, execute the following command to copy the application code to the development board. If the copy fails, please check if there is a directory HIAI\_PROJECTS on the development board, and if not, create it.
 
@@ -124,6 +124,7 @@ You may first run the application, if there is any error about missing dependenc
     ![](figures/bashrc.png)   
 
     Execute the following command to make the environment variable take effect
+    
     **source ~/.bashrc**  
 
 
@@ -158,12 +159,12 @@ You may first run the application, if there is any error about missing dependenc
 
 2.  If you need to view the detection results using presenter server for the live input or video source, log in to the Presenter Server website using the URL that was prompted when the Presenter Server service was started. Otherwise, skip this step.
 
-Wait for the Presenter Agent to transmit data to the server, and click "Refresh" to refresh. When there is data, the status of the corresponding Channel turns green, as shown in the figure below.
+    Wait for the Presenter Agent to transmit data to the server, and click "Refresh" to refresh. When there is data, the status of the corresponding Channel turns green, as shown in the figure below.
 
-**Figure**  Presenter Server<a name="zh-cn_topic_0228461904_zh-cn_topic_0203223294_fig113691556202312"></a>  
+    **Figure**  Presenter Server<a name="zh-cn_topic_0228461904_zh-cn_topic_0203223294_fig113691556202312"></a>  
 ![](figures/presenter.png "Presenter-Server-interface") 
 
-Click the corresponding View Name link on the right, such as "video" in the above picture, to view the results.
+    Click the corresponding View Name link on the right, such as "video" in the above picture, to view the results.
 
 ## Stopping Application<a name="zh-cn_topic_0228757088_section1092612277429"></a>
 
