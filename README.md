@@ -24,6 +24,8 @@ The figure below shows the sample output on a single image input. The detected p
 **Figure**  Body pose detection result<a name="zh-cn_topic_0228757088_fig64391558352"></a>  
     <img src="figures/pose_detected.jpg" width="350">
 
+Original image from https://www.pexels.com/photo/man-playing-tennis-1407818/
+
 **Performance:** The inference time of running the model on Atlas 200 DK is about 17 ms per image/frame .  
 **Limitation:** The model works well when there is only one persion and with whole body clearly shown in the view.
 
@@ -154,6 +156,8 @@ You may first run the application, if there is any error about missing dependenc
     
     **Note**, for the live camera case, the "CAMERA0" camera is used by default. Please refer to the link below for the viewing method.   
    https://support.huaweicloud.com/usermanual-A200dk_3000/atlas200dk_02_0051.html 
+   
+   The sample video originates from https://www.pexels.com/video/woman-stretching-near-a-cliff-854370
 
 2.  If you need to view the detection results using presenter server for the live input or video source, log in to the Presenter Server website using the URL that was prompted when the Presenter Server service was started. Otherwise, skip this step.
 
